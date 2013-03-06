@@ -1,0 +1,15 @@
+bin/qbittorrent
+share/man/man1/qbittorrent.1
+share/qbittorrent-3.0.6/applications/qBittorrent.desktop
+share/qbittorrent-3.0.6/icons/hicolor/128x128/apps/qbittorrent.png
+share/qbittorrent-3.0.6/icons/hicolor/16x16/apps/qbittorrent.png
+share/qbittorrent-3.0.6/icons/hicolor/192x192/apps/qbittorrent.png
+share/qbittorrent-3.0.6/icons/hicolor/22x22/apps/qbittorrent.png
+share/qbittorrent-3.0.6/icons/hicolor/24x24/apps/qbittorrent.png
+share/qbittorrent-3.0.6/icons/hicolor/32x32/apps/qbittorrent.png
+share/qbittorrent-3.0.6/icons/hicolor/36x36/apps/qbittorrent.png
+share/qbittorrent-3.0.6/icons/hicolor/48x48/apps/qbittorrent.png
+share/qbittorrent-3.0.6/icons/hicolor/64x64/apps/qbittorrent.png
+share/qbittorrent-3.0.6/icons/hicolor/72x72/apps/qbittorrent.png
+share/qbittorrent-3.0.6/icons/hicolor/96x96/apps/qbittorrent.png
+share/qbittorrent-3.0.6/pixmaps/qbittorrent.png

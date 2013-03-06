@@ -1,0 +1,39 @@
+$NetBSD$
+
+--- CMakeLists.txt.orig	2012-11-13 16:15:08.214695936 +0000
++++ CMakeLists.txt
+@@ -208,7 +208,7 @@ endif (APPLE)
+ 
+ if (APPLE)
+   set (CLIENT_DATA_DIR "${PROJECT_NAME_GLOBAL}.app")
+-elseif (WIN32 OR HAIKU)
++elseif (WIN32)
+   set (CLIENT_DATA_DIR "${SHARE_DIR}")
+ else (APPLE)
+   set (CLIENT_DATA_DIR "${CMAKE_INSTALL_PREFIX}/${SHARE_DIR}/${PROJECT_NAME_GLOBAL}")
+@@ -216,7 +216,7 @@ endif (APPLE)
+ 
+ if (APPLE)
+   set (LOCALE_DIR "${PROJECT_NAME_GLOBAL}.app/locale")
+-elseif (WIN32 OR HAIKU)
++elseif (WIN32)
+   set (LOCALE_DIR "${SHARE_DIR}/locale")
+ else (APPLE)
+   set (LOCALE_DIR "${CMAKE_INSTALL_PREFIX}/${SHARE_DIR}/locale")
+@@ -316,14 +316,14 @@ else (NOT DEFINED linguas)
+ endif (NOT DEFINED linguas)
+ message (STATUS "Translations: ${LANGUAGES}")
+ 
+-if (WIN32 OR HAIKU)
++if (WIN32)
+     set (BINDIR .)
+ elseif (UNIX)
+     set (BINDIR bin)
+     if (APPLE)
+         set (BUNDLEDIR .)
+     endif (APPLE)
+-endif (WIN32 OR HAIKU)
++endif (WIN32)
+ 
+ add_subdirectory(extra)
+ add_subdirectory(data)
