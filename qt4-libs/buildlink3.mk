@@ -7,7 +7,7 @@ QT4_LIBS_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.qt4-libs+=	qt4-libs>=4.6.1nb2
 BUILDLINK_ABI_DEPENDS.qt4-libs+=	qt4-libs>=4.8.4nb3
-BUILDLINK_PKGSRCDIR.qt4-libs?=	../../x11/qt4-libs
+BUILDLINK_PKGSRCDIR.qt4-libs?=	../../wip/qt4-libs
 
 BUILDLINK_INCDIRS.qt4-libs+=	qt4/include
 BUILDLINK_LIBDIRS.qt4-libs+=	qt4/lib
