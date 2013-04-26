@@ -1,0 +1,13 @@
+$NetBSD$
+
+SHA1 (goldendict-1.0.1-src.tar.bz2) = a1ff36b1cceb5234f4730d1c6f19405a76d40fc4
+RMD160 (goldendict-1.0.1-src.tar.bz2) = 2a87de3172a117fbb419aa7d1e037ba2c4cb072f
+Size (goldendict-1.0.1-src.tar.bz2) = 2705932 bytes
+SHA1 (patch-articleview.cc) = 39e3de8badc9ecad027764b3c54513cb90cc320f
+SHA1 (patch-goldendict.pro) = 6ab31137ebd11b21b02088018595d3b305385eba
+SHA1 (patch-hotkeywrapper.cc) = 7627570ee2ac988b08736e02d91f5e8240761a89
+SHA1 (patch-hotkeywrapper.hh) = 1e48907cf302e0f7888c5eb61a95b0b1b699eb11
+SHA1 (patch-keyboardstate.cc) = d743e9e74a90151012600f010f6e796ce157ba92
+SHA1 (patch-processwrapper.cc) = de0324d585da5bde762e1d32e85ee2a47c8ce605
+SHA1 (patch-qtsingleapplication_src_qtlocalpeer.cpp) = 08bdf0f2dced709abe47d140f844605f9886ff6d
+SHA1 (patch-termination.cc) = 6c1313e8ba08711140337a111dac2087be6e6101
