@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-DISTNAME=	vacuum-1.2.0
+DISTNAME=	vacuum-1.2.2
 CATEGORIES=	chat
 MASTER_SITES=	http://vacuum-im.googlecode.com/files/
 
@@ -18,14 +18,15 @@ USE_LANGUAGES=	c c++
 CONFIGURE_DIRS=		build
 CMAKE_ARG_PATH=	..
 
-CMAKE_ARGS+= -DCMAKE_INSTALL_PREFIX=${PREFIX}
+CMAKE_ARGS+= -DCMAKE_INSTALL_PREFIX=${DESTDIR}
 
 pre-configure:
 	${MKDIR} ${WRKSRC}/build
 	
 
 BUILDLINK_API_DEPENDS.qt4-libs+=	qt4-libs>=4.4.0
-.include "../../x11/qt4-tools/buildlink3.mk"
+.include "../../wip/qt4-libs/buildlink3.mk"
+.include "../../wip/qt4-tools/buildlink3.mk"
 .include "../../devel/libidn/buildlink3.mk"
 .include "../../textproc/hunspell/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
