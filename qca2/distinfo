@@ -1,0 +1,11 @@
+$NetBSD: distinfo,v 1.5 2010/12/02 15:03:56 wiz Exp $
+
+SHA1 (qca-2.0.3.tar.bz2) = 9c868b05b81dce172c41b813de4de68554154c60
+RMD160 (qca-2.0.3.tar.bz2) = 333cfdce91fedfaec09c205528de52d7b569c521
+Size (qca-2.0.3.tar.bz2) = 4530731 bytes
+SHA1 (patch-configure) = 742ff75c7c23a616ca9178103ec24e461f5bbc70
+SHA1 (patch-src_botantools_botan_botan_secmem.h) = 36835a3cc63cd22b43a58e8ec9616845a57c4344
+SHA1 (patch-src_botantools_botan_ml__unix_mlock.cpp) = 40dfdade94c2fa5718c74b12afbefacb154d0f60
+SHA1 (patch-src_qca__tools.cpp) = dbba9766791c2b90ced2e6b492130852388fee9f
+SHA1 (patch-src_src.pro) = cf37b93953a55270f913f7b16a40b3e936d4191b
+SHA1 (patch-src_support_console.cpp) = 7adef4ca44ac7625481f204de4d6b626c86a085e

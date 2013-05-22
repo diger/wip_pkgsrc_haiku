@@ -1,0 +1,14 @@
+$NetBSD: distinfo,v 1.25 2011/01/02 23:53:12 schnoebe Exp $
+
+SHA1 (psi-0.15/psi-0.15.tar.bz2) = 4801866d4fa2af43a9b3f431e2c9d633a97276db
+RMD160 (psi-0.15/psi-0.15.tar.bz2) = 0c5d461fb2b7e7b25850f19f79bcc23c1e87efb3
+Size (psi-0.15/psi-0.15.tar.bz2) = 1984777 bytes
+SHA1 (patch-ad) = 7b6eb2286c268d35b9f10fb857de795fb263fcae
+SHA1 (patch-ah) = 47b79822391fb6dd249379ba94d9b192b5c148df
+SHA1 (patch-ak) = ceeeec31282c3d97f685f0f921d71bb686709197
+SHA1 (patch-al) = 5e0e0c2a89dcba9f7f7bec51f82f9dc12a22d58c
+SHA1 (patch-iris_src_jdns_qjdns__sock.cpp) = 76b6e631a6925a735f0bb733aa8dc653b7a08160
+SHA1 (patch-src_applicationinfo.cpp) = be04e7246a3d53d284b17a8d95de6015c442d4c5
+SHA1 (patch-src_libpsi_tools_globalshortcut_globalshortcut.pri) = 7ea3bc169161c05089b3428b3e620234e67d67db
+SHA1 (patch-src_src.pro) = b88150b5c6b738f4b322c3fe8a15589f7545d552
+SHA1 (patch-src_systeminfo.cpp) = 0ab76a2b0a8c80d7e3cd3b82c8c8134e544d2b48
