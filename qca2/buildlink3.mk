@@ -8,7 +8,7 @@ QCA2_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.qca2+=	qca2>=2.0.0
 BUILDLINK_ABI_DEPENDS.qca2+=	qca2>=2.0.3nb13
-BUILDLINK_PKGSRCDIR.qca2?=	../../security/qca2
+BUILDLINK_PKGSRCDIR.qca2?=	../../wip/qca2
 
 .include "../../wip/qt4-libs/buildlink3.mk"
 .include "../../wip/qt4-tools/buildlink3.mk"
