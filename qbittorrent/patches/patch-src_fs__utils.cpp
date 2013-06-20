@@ -1,19 +1,17 @@
 $NetBSD$
 
---- src/fs_utils.cpp.orig	2012-05-20 15:15:31.000000000 +0000
+--- src/fs_utils.cpp.orig	2013-03-16 19:31:19.050069504 +0000
 +++ src/fs_utils.cpp
-@@ -53,7 +53,9 @@
+@@ -52,6 +52,8 @@
+ #if defined(Q_WS_MAC) || defined(Q_OS_FREEBSD)
  #include <sys/param.h>
  #include <sys/mount.h>
- #else
--#include <sys/vfs.h>
-+#ifdef Q_WS_HAIKU
++#elif defined(Q_WS_HAIKU)
 +#include <kernel/fs_info.h>
-+#endif
- #endif
  #else
- #include <winbase.h>
-@@ -263,6 +265,18 @@ long long fsutils::freeDiskSpaceOnPath(Q
+ #include <sys/vfs.h>
+ #endif
+@@ -282,6 +284,18 @@ long long fsutils::freeDiskSpaceOnPath(Q
  
  #ifndef Q_WS_WIN
    unsigned long long available;
@@ -32,7 +30,7 @@ $NetBSD$
    struct statfs stats;
    const QString statfs_path = dir_path.path()+"/.";
    const int ret = statfs (qPrintable(statfs_path), &stats) ;
-@@ -273,6 +287,7 @@ long long fsutils::freeDiskSpaceOnPath(Q
+@@ -292,6 +306,7 @@ long long fsutils::freeDiskSpaceOnPath(Q
    } else {
      return -1;
    }
