@@ -1,0 +1,6 @@
+$NetBSD$
+
+SHA1 (QupZilla-1.4.3.tar.gz) = 38ac935dc7e4ad5a68cd9ca55abd116abfd66c50
+RMD160 (QupZilla-1.4.3.tar.gz) = b9f7d27f96177c9033bd83aa1bfa343c9f4deee5
+Size (QupZilla-1.4.3.tar.gz) = 3947912 bytes
+SHA1 (patch-src_defines.pri) = c582b51c0a0f0106eb65911ab70554c0173e37e3

@@ -1,0 +1,7 @@
+$NetBSD$
+
+SHA1 (texmaker-4.0.1.tar.bz2) = 6520476fe58d3da2c0c2ed78ed33af3bc7198606
+RMD160 (texmaker-4.0.1.tar.bz2) = 63c8cc89995e212327ad79a662fe3d85e04d89bf
+Size (texmaker-4.0.1.tar.bz2) = 13065488 bytes
+SHA1 (patch-texmaker.cpp) = 6d25ece7b26504a5c72b15cc1d4bfc7eda346294
+SHA1 (patch-texmaker.pro) = 977196697cb74c83a664df3148b8da8d7663b1ee
