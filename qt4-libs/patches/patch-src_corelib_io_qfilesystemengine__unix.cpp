@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/corelib/io/qfilesystemengine_unix.cpp.orig	2012-11-23 10:09:55.054788096 +0000
+--- src/corelib/io/qfilesystemengine_unix.cpp.orig	2012-11-23 10:09:55.050069504 +0000
 +++ src/corelib/io/qfilesystemengine_unix.cpp
 @@ -616,6 +616,9 @@ bool QFileSystemEngine::setPermissions(c
  QString QFileSystemEngine::homePath()

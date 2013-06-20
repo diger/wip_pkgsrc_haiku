@@ -1,6 +1,6 @@
 $NetBSD$
 
---- tools/designer/src/designer/designer.pro.orig	2012-11-23 10:09:52.033030144 +0000
+--- tools/designer/src/designer/designer.pro.orig	2012-11-23 10:09:52.019660800 +0000
 +++ tools/designer/src/designer/designer.pro
 @@ -14,7 +14,7 @@ INCLUDEPATH += \
      ../lib/uilib \

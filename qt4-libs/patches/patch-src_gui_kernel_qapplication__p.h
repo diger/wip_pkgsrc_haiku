@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/gui/kernel/qapplication_p.h.orig	2012-11-23 10:09:53.015990784 +0000
+--- src/gui/kernel/qapplication_p.h.orig	2012-11-23 10:09:53.007077888 +0000
 +++ src/gui/kernel/qapplication_p.h
 @@ -298,6 +298,8 @@ public:
  #elif defined(Q_WS_QWS)

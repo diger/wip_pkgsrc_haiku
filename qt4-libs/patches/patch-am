@@ -1,6 +1,6 @@
 $NetBSD$
 
---- tools/designer/src/uitools/uitools.pro.orig	2012-11-23 10:09:52.016252928 +0000
+--- tools/designer/src/uitools/uitools.pro.orig	2012-11-23 10:09:52.002883584 +0000
 +++ tools/designer/src/uitools/uitools.pro
 @@ -1,7 +1,7 @@
  TEMPLATE = lib

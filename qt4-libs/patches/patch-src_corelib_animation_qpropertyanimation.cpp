@@ -1,7 +1,7 @@
 $NetBSD$
 
 Patch from Qt bug 29082, solving a problem with KDE crashes
---- src/corelib/animation/qpropertyanimation.cpp.orig	2012-11-23 10:09:55.030670848 +0000
+--- src/corelib/animation/qpropertyanimation.cpp.orig	2012-11-23 10:09:55.025952256 +0000
 +++ src/corelib/animation/qpropertyanimation.cpp
 @@ -135,8 +135,11 @@ void QPropertyAnimationPrivate::updatePr
  

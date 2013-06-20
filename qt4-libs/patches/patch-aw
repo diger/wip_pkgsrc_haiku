@@ -1,6 +1,6 @@
 $NetBSD: patch-aw,v 1.2 2010/07/04 06:00:14 adam Exp $
 
---- src/network/kernel/qhostinfo_unix.cpp.orig	2012-11-23 10:09:55.032505856 +0000
+--- src/network/kernel/qhostinfo_unix.cpp.orig	2012-11-23 10:09:55.023592960 +0000
 +++ src/network/kernel/qhostinfo_unix.cpp
 @@ -118,6 +118,8 @@ static void resolveLibrary()
          if (!local_res_nclose)

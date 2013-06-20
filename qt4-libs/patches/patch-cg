@@ -2,7 +2,7 @@ $NetBSD: patch-cg,v 1.1 2011/03/03 05:50:04 adam Exp $
 
 Avoid error when compiling with Clang.
 
---- src/gui/dialogs/qfontdialog_mac.mm.orig	2012-11-23 10:09:53.030146560 +0000
+--- src/gui/dialogs/qfontdialog_mac.mm.orig	2012-11-23 10:09:53.021233664 +0000
 +++ src/gui/dialogs/qfontdialog_mac.mm
 @@ -510,7 +510,7 @@ void QFontDialogPrivate::setFont(void *d
  

@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/network/socket/qnativesocketengine_unix.cpp.orig	2012-11-23 10:09:54.037748736 +0000
+--- src/network/socket/qnativesocketengine_unix.cpp.orig	2012-11-23 10:09:54.028573696 +0000
 +++ src/network/socket/qnativesocketengine_unix.cpp
 @@ -888,6 +888,9 @@ qint64 QNativeSocketEnginePrivate::nativ
  #endif

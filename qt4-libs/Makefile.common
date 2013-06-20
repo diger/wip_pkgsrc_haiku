@@ -138,8 +138,8 @@ SUBST_CLASSES+=		lt
 SUBST_MESSAGE.lt=	Enabling libtool.
 SUBST_STAGE.lt=		pre-configure
 SUBST_FILES.lt=		src/gui/gui.pro
-SUBST_SED.lt=		-e 's,$$$$QMAKE_CXX -c -W,$${LIBTOOL} --mode=compile &,'
-SUBST_SED.lt+=		-e 's,$$$${first(QMAKE_EXT_OBJ)},.lo,'
+SUBST_SED.lt=		-e 's,$$$${first(QMAKE_EXT_OBJ)},.lo,'
+#SUBST_SED.lt+=		-e 's,$$$$QMAKE_CXX -c -W,$${LIBTOOL} --mode=compile &,'
 
 .include "options.mk"
 

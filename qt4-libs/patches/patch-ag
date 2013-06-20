@@ -1,6 +1,6 @@
 $NetBSD: patch-ag,v 1.13 2011/03/03 05:50:04 adam Exp $
 
---- qmake/project.cpp.orig	2012-11-23 10:11:21.039059456 +0000
+--- qmake/project.cpp.orig	2012-11-23 10:11:21.023330816 +0000
 +++ qmake/project.cpp
 @@ -546,7 +546,11 @@ QStringList qmake_feature_paths(QMakePro
          case Option::TARG_UNIX_MODE:

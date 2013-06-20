@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/gui/util/qdesktopservices.cpp.orig	2012-11-23 10:09:53.054001664 +0000
+--- src/gui/util/qdesktopservices.cpp.orig	2012-11-23 10:09:53.044826624 +0000
 +++ src/gui/util/qdesktopservices.cpp
 @@ -57,6 +57,8 @@
  #include "qdesktopservices_mac.cpp"

@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/corelib/concurrent/qtconcurrentiteratekernel.cpp.orig	2012-11-23 10:09:55.045613056 +0000
+--- src/corelib/concurrent/qtconcurrentiteratekernel.cpp.orig	2012-11-23 10:09:55.041156608 +0000
 +++ src/corelib/concurrent/qtconcurrentiteratekernel.cpp
 @@ -41,7 +41,7 @@
  

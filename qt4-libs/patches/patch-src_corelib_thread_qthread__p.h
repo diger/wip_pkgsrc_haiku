@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/corelib/thread/qthread_p.h.orig	2012-11-23 10:09:55.018874368 +0000
+--- src/corelib/thread/qthread_p.h.orig	2012-11-23 10:09:55.010485760 +0000
 +++ src/corelib/thread/qthread_p.h
 @@ -179,7 +179,7 @@ public:
      static void finish(void *, bool lockAnyway=true);

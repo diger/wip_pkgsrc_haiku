@@ -1,6 +1,6 @@
 $NetBSD: patch-ad,v 1.12 2011/01/12 07:07:07 adam Exp $
 
---- src/corelib/global/qglobal.h.orig	2012-11-23 10:09:55.049807360 +0000
+--- src/corelib/global/qglobal.h.orig	2012-11-23 10:09:55.045088768 +0000
 +++ src/corelib/global/qglobal.h
 @@ -163,6 +163,7 @@ namespace QT_NAMESPACE {}
       NETBSD   - NetBSD

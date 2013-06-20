@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/declarative/util/qdeclarativefontloader.cpp.orig	2012-11-23 10:09:53.013631488 +0000
+--- src/declarative/util/qdeclarativefontloader.cpp.orig	2012-11-23 10:09:53.004456448 +0000
 +++ src/declarative/util/qdeclarativefontloader.cpp
 @@ -64,7 +64,7 @@ class QDeclarativeFontObject : public QO
  Q_OBJECT

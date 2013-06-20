@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/3rdparty/javascriptcore/JavaScriptCore/interpreter/Interpreter.cpp.orig	2012-11-23 10:09:56.003670016 +0000
+--- src/3rdparty/javascriptcore/JavaScriptCore/interpreter/Interpreter.cpp.orig	2012-11-23 10:09:56.009699328 +0000
 +++ src/3rdparty/javascriptcore/JavaScriptCore/interpreter/Interpreter.cpp
 @@ -2493,8 +2493,10 @@ JSValue Interpreter::privateExecute(Exec
              vPC += OPCODE_LENGTH(op_get_by_pname);

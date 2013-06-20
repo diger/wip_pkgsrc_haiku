@@ -1,6 +1,6 @@
 $NetBSD$
 
---- config.tests/mac/dwarf2.test.orig	2012-11-23 10:11:21.056098816 +0000
+--- config.tests/mac/dwarf2.test.orig	2012-11-23 10:11:21.049020928 +0000
 +++ config.tests/mac/dwarf2.test
 @@ -21,7 +21,7 @@ rm -f dwarf2.c dwarf2.o
  "$COMPILER" $WORKDIR/xcodeversion.cpp -o xcodeversion -framework Carbon;

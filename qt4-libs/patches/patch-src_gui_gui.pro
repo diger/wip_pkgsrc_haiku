@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/gui/gui.pro.orig	2012-11-23 10:09:53.058458112 +0000
+--- src/gui/gui.pro.orig	2012-11-23 10:09:53.049283072 +0000
 +++ src/gui/gui.pro
 @@ -5,7 +5,7 @@ DEFINES   += QT_BUILD_GUI_LIB QT_NO_USIN
  win32-msvc*|win32-icc:QMAKE_LFLAGS += /BASE:0x65000000

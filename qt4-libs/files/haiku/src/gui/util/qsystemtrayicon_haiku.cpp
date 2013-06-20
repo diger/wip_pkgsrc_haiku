@@ -64,6 +64,7 @@ QT_BEGIN_NAMESPACE
 #include <Bitmap.h>
 #include <Looper.h>
 #include <Notification.h>
+#include <Path.h>
 
 #include <stdlib.h>
 #include <string.h>
@@ -449,7 +450,12 @@ void QSystemTrayIconPrivate::updateToolTip_sys()
 
 bool QSystemTrayIconPrivate::isSystemTrayAvailable_sys()
 {	
-	QFileInfo qsystrayfile("/boot/common/bin/qsystray");	
+    supportsMessages_sys();
+	entry_ref ref;
+	be_roster->FindApp( "application/x-vnd.QtSystrayManager_gcc4", &ref );
+	BEntry entry (&ref);
+	BPath path (&entry);
+	QFileInfo qsystrayfile(path.Path());
 	return qsystrayfile.exists();
 }
 

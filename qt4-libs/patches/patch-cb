@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/gui/kernel/qapplication_mac.mm.orig	2012-11-23 10:09:53.015990784 +0000
+--- src/gui/kernel/qapplication_mac.mm.orig	2012-11-23 10:09:53.006815744 +0000
 +++ src/gui/kernel/qapplication_mac.mm
 @@ -1257,12 +1257,14 @@ void qt_init(QApplicationPrivate *priv, 
          [cocoaApp setDelegate:newDelegate];

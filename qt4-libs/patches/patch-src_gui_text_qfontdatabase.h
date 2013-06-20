@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/gui/text/qfontdatabase.h.orig	2012-11-23 10:09:53.039321600 +0000
+--- src/gui/text/qfontdatabase.h.orig	2012-11-23 10:09:53.030146560 +0000
 +++ src/gui/text/qfontdatabase.h
 @@ -175,6 +175,10 @@ private:
      QFontDatabasePrivate *d;

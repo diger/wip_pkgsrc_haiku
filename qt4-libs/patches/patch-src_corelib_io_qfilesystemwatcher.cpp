@@ -1,7 +1,7 @@
 $NetBSD$
 
 Use kqueue instead of fam to monitor the file system
---- src/corelib/io/qfilesystemwatcher.cpp.orig	2012-11-23 10:09:55.055836672 +0000
+--- src/corelib/io/qfilesystemwatcher.cpp.orig	2012-11-23 10:09:55.051118080 +0000
 +++ src/corelib/io/qfilesystemwatcher.cpp
 @@ -257,7 +257,7 @@ QFileSystemWatcherEngine *QFileSystemWat
      if(!eng)

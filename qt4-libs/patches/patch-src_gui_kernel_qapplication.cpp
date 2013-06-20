@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/gui/kernel/qapplication.cpp.orig	2012-11-23 10:09:53.015466496 +0000
+--- src/gui/kernel/qapplication.cpp.orig	2012-11-23 10:09:53.006553600 +0000
 +++ src/gui/kernel/qapplication.cpp
 @@ -4860,7 +4860,7 @@ bool QApplicationPrivate::notify_helper(
    Stubbed session management support
