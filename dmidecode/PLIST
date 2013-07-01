@@ -1,0 +1,6 @@
+@comment $NetBSD$
+man/man8/dmidecode.8
+sbin/dmidecode
+share/doc/dmidecode/AUTHORS
+share/doc/dmidecode/CHANGELOG
+share/doc/dmidecode/README
