@@ -1,6 +1,0 @@
-$NetBSD$
-
-SHA1 (eiskaltdcpp-2.2.7.tar.xz) = ced990e57764983397c62972f1d2a3841ce4df9c
-RMD160 (eiskaltdcpp-2.2.7.tar.xz) = 34bf932fd8d4477d8c8147eed3a26f0d66e6127f
-Size (eiskaltdcpp-2.2.7.tar.xz) = 2195324 bytes
-SHA1 (patch-CMakeLists.txt) = 3ed8e2d5c53afa640a07f0f4c635e5ae3447a709

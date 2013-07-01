@@ -3,13 +3,9 @@
 
 PKG_OPTIONS_VAR=        PKG_OPTIONS.eiskaltdc
 PKG_SUPPORTED_OPTIONS=	qtdbus lua debug daemon aspell idn xdg
-PKG_SUGGESTED_OPTIONS+=	aspell idn
+PKG_SUGGESTED_OPTIONS+=	aspell idn xdg
 
 .include "../../mk/bsd.options.mk"
-
-.  if ${OPSYS} != "Haiku"
-PKG_SUPPORTED_OPTIONS+=	xdg
-.endif
 
 .if empty(PKG_OPTIONS:Mxdg)
 -DFORCE_XDG=OFF
