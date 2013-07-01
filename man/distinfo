@@ -1,0 +1,12 @@
+$NetBSD$
+
+SHA1 (man-1.6e.tar.gz) = 7264bda7dd7bf08bdb9dac6ec7734e755ec0a8d1
+RMD160 (man-1.6e.tar.gz) = 486099dc1b34fe86a2c1d19b7c89dc19b9787837
+Size (man-1.6e.tar.gz) = 252657 bytes
+SHA1 (patch-aa) = 319d3fb2d7830e3f68b1460863c026d2a87bdf23
+SHA1 (patch-ab) = f12f90ef14b6536c93855a62999051a10f3fb1bf
+SHA1 (patch-ac) = 09b43e6303c88446bc43e864cd2913b48f4649dc
+SHA1 (patch-ad) = 060b9724b0fa437a9d1dd3a6c3827047d435b526
+SHA1 (patch-ae) = c8d82bdc26f89658c0f6655337ebc9fc1c03c561
+SHA1 (patch-af) = 07c3faa3f26aea16595a549436d7b5047c270520
+SHA1 (patch-gencat_gencat.c) = 1a67525cafdd2568f147d77c35a42cf0a84efab8
