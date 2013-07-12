@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/defines.pri.orig	2013-04-26 08:40:09.457441280 +0000
+--- src/defines.pri.orig	2013-05-10 10:10:45.016515072 +0000
 +++ src/defines.pri
 @@ -74,6 +74,28 @@ equals(d_use_webgl, "true") { DEFINES *=
  win32-msvc* {

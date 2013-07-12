@@ -1,13 +1,15 @@
 @comment $NetBSD$
 bin/qupzilla
-lib/libQupZilla.la
-lib/qupzilla/libAccessKeysNavigation.la
-lib/qupzilla/libGreaseMonkey.la
-lib/qupzilla/libMouseGestures.la
-lib/qupzilla/libPIM.la
+lib/libQupZilla.so
+lib/libQupZilla.so.1
+lib/libQupZilla.so.1.4.3
+lib/qupzilla/libAccessKeysNavigation.so
+lib/qupzilla/libGreaseMonkey.so
+lib/qupzilla/libMouseGestures.so
+lib/qupzilla/libPIM.so
 share/qupzilla/applications/qupzilla.desktop
-share/qupzilla/icons/hicolor/${OS_VERSION}28x${OS_VERSION}28/apps/qupzilla.png
-share/qupzilla/icons/hicolor/${OS_VERSION}6x${OS_VERSION}6/apps/qupzilla.png
+share/qupzilla/icons/hicolor/128x128/apps/qupzilla.png
+share/qupzilla/icons/hicolor/16x16/apps/qupzilla.png
 share/qupzilla/icons/hicolor/256x256/apps/qupzilla.png
 share/qupzilla/icons/hicolor/32x32/apps/qupzilla.png
 share/qupzilla/icons/hicolor/48x48/apps/qupzilla.png
