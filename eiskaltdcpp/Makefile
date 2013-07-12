@@ -27,6 +27,9 @@ CMAKE_ARG_PATH= ..
 .include "options.mk"
 
 CMAKE_ARGS+=	-DWITH_SOUNDS=ON
+.if ${OPSYS} == "Haiku"
+CMAKE_ARGS+=	-DHAIKU_PKG=ON
+.endif
 
 pre-configure:
 	${MKDIR} ${WRKDIR}/eiskaltdcpp-${VERSION}/build
