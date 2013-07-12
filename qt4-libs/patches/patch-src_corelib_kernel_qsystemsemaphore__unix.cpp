@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/corelib/kernel/qsystemsemaphore_unix.cpp.orig	2012-11-23 10:09:55.001310720 +0000
+--- src/corelib/kernel/qsystemsemaphore_unix.cpp.orig	2013-06-07 05:16:52.063700992 +0000
 +++ src/corelib/kernel/qsystemsemaphore_unix.cpp
 @@ -55,6 +55,9 @@
  #endif

@@ -1,6 +1,6 @@
 $NetBSD$
 
---- config.tests/unix/iconv/iconv.cpp.orig	2012-11-23 10:11:21.058458112 +0000
+--- config.tests/unix/iconv/iconv.cpp.orig	2013-06-07 05:16:41.017301504 +0000
 +++ config.tests/unix/iconv/iconv.cpp
 @@ -48,7 +48,11 @@ int main(int, char **)
  {

@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/gui/image/image.pri.orig	2012-11-23 10:09:53.049545216 +0000
+--- src/gui/image/image.pri.orig	2013-06-07 05:16:59.018874368 +0000
 +++ src/gui/image/image.pri
 @@ -80,6 +80,10 @@ else:symbian {
      HEADERS += image/qpixmap_raster_symbian_p.h

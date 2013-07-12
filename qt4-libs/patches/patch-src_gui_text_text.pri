@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/gui/text/text.pri.orig	2012-11-23 10:09:53.044302336 +0000
+--- src/gui/text/text.pri.orig	2013-06-07 05:16:59.003670016 +0000
 +++ src/gui/text/text.pri
 @@ -248,5 +248,15 @@ contains(QT_CONFIG, fontconfig) {
  }

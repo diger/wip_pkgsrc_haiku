@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/gui/util/qsystemtrayicon_p.h.orig	2012-11-23 10:09:53.046137344 +0000
+--- src/gui/util/qsystemtrayicon_p.h.orig	2013-06-07 05:16:59.033816576 +0000
 +++ src/gui/util/qsystemtrayicon_p.h
 @@ -178,6 +178,12 @@ private:
  };

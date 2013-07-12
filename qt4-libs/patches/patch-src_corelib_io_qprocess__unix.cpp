@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/corelib/io/qprocess_unix.cpp.orig	2012-11-23 10:09:55.055050240 +0000
+--- src/corelib/io/qprocess_unix.cpp.orig	2013-06-07 05:16:52.010223616 +0000
 +++ src/corelib/io/qprocess_unix.cpp
-@@ -903,8 +903,12 @@ qint64 QProcessPrivate::bytesAvailableFr
+@@ -927,8 +927,12 @@ qint64 QProcessPrivate::bytesAvailableFr
  {
      int nbytes = 0;
      qint64 available = 0;
@@ -15,7 +15,7 @@ $NetBSD$
  #if defined (QPROCESS_DEBUG)
      qDebug("QProcessPrivate::bytesAvailableFromStdout() == %lld", available);
  #endif
-@@ -915,8 +919,12 @@ qint64 QProcessPrivate::bytesAvailableFr
+@@ -939,8 +943,12 @@ qint64 QProcessPrivate::bytesAvailableFr
  {
      int nbytes = 0;
      qint64 available = 0;

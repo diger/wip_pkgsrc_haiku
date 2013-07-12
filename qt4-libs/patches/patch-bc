@@ -2,7 +2,7 @@ $NetBSD$
 
 Build shared libwebcore.
 
---- src/3rdparty/webkit/Source/WebCore/WebCore.pri.orig	2012-11-23 10:09:57.009699328 +0000
+--- src/3rdparty/webkit/Source/WebCore/WebCore.pri.orig	2013-06-07 05:16:55.060555264 +0000
 +++ src/3rdparty/webkit/Source/WebCore/WebCore.pri
 @@ -272,6 +272,7 @@ contains(DEFINES, ENABLE_WEBGL=1)|contai
  }

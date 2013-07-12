@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/gui/kernel/qwidget_p.h.orig	2012-11-23 10:09:53.033554432 +0000
+--- src/gui/kernel/qwidget_p.h.orig	2013-06-07 05:16:59.055574528 +0000
 +++ src/gui/kernel/qwidget_p.h
-@@ -917,6 +917,9 @@ public:
+@@ -919,6 +919,9 @@ public:
      void registerTouchWindow();
      QList<WId> widCleanupList;
      uint isGLGlobalShareWidget : 1;

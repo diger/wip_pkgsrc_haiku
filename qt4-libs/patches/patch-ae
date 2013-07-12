@@ -1,6 +1,6 @@
 $NetBSD: patch-ae,v 1.10 2011/03/03 05:50:04 adam Exp $
 
---- qmake/generators/unix/unixmake.cpp.orig	2012-11-23 10:11:21.019136512 +0000
+--- qmake/generators/unix/unixmake.cpp.orig	2013-06-07 05:17:01.017563648 +0000
 +++ qmake/generators/unix/unixmake.cpp
 @@ -356,27 +356,29 @@ UnixMakefileGenerator::init()
                  if(libtoolify[i].startsWith("QMAKE_LINK") || libtoolify[i] == "QMAKE_AR_CMD") {

@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/gui/kernel/qwidget.h.orig	2012-11-23 10:09:53.032505856 +0000
+--- src/gui/kernel/qwidget.h.orig	2013-06-07 05:16:59.004718592 +0000
 +++ src/gui/kernel/qwidget.h
-@@ -107,6 +107,9 @@ class QUnifiedToolbarSurface;
+@@ -110,6 +110,9 @@ class QUnifiedToolbarSurface;
  #if defined(Q_WS_X11)
  class QX11Info;
  #endif
@@ -12,7 +12,7 @@ $NetBSD$
  
  class QWidgetData
  {
-@@ -261,6 +264,16 @@ public Q_SLOTS:
+@@ -264,6 +267,16 @@ public Q_SLOTS:
      void setEnabled(bool);
      void setDisabled(bool);
      void setWindowModified(bool);
@@ -29,7 +29,7 @@ $NetBSD$
  
      // Widget coordinates
  
-@@ -611,6 +624,10 @@ public:
+@@ -614,6 +627,10 @@ public:
      Qt::HANDLE handle() const;
  #endif
  

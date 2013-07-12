@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/gui/gui.pro.orig	2012-11-23 10:09:53.049283072 +0000
+--- src/gui/gui.pro.orig	2013-06-07 05:16:59.049807360 +0000
 +++ src/gui/gui.pro
 @@ -5,7 +5,7 @@ DEFINES   += QT_BUILD_GUI_LIB QT_NO_USIN
  win32-msvc*|win32-icc:QMAKE_LFLAGS += /BASE:0x65000000
@@ -28,7 +28,7 @@ $NetBSD$
      neon_compiler.input = NEON_SOURCES
      neon_compiler.variable_out = OBJECTS
      neon_compiler.name = compiling[neon] ${QMAKE_FILE_IN}
-@@ -85,7 +86,7 @@ contains(QMAKE_MAC_XARCH, no) {
+@@ -85,7 +86,7 @@ mac:contains(QMAKE_MAC_XARCH, no) {
  } else {
      win32-g++*|!win32:!win32-icc*:!macx-icc* {
          mmx {
@@ -37,7 +37,7 @@ $NetBSD$
  
              mac {
                  mmx_compiler.commands += -Xarch_i386 -mmmx
-@@ -96,7 +97,7 @@ contains(QMAKE_MAC_XARCH, no) {
+@@ -96,7 +97,7 @@ mac:contains(QMAKE_MAC_XARCH, no) {
  
              mmx_compiler.commands += $(CXXFLAGS) $(INCPATH) ${QMAKE_FILE_IN} -o ${QMAKE_FILE_OUT}
              mmx_compiler.dependency_type = TYPE_C
@@ -46,7 +46,7 @@ $NetBSD$
              mmx_compiler.input = MMX_SOURCES
              mmx_compiler.variable_out = OBJECTS
              mmx_compiler.name = compiling[mmx] ${QMAKE_FILE_IN}
-@@ -104,7 +105,7 @@ contains(QMAKE_MAC_XARCH, no) {
+@@ -104,7 +105,7 @@ mac:contains(QMAKE_MAC_XARCH, no) {
              QMAKE_EXTRA_COMPILERS += mmx_compiler
          }
          3dnow {
@@ -55,7 +55,7 @@ $NetBSD$
  
              mac {
                  mmx3dnow_compiler.commands += -Xarch_i386 -m3dnow -Xarch_i386 -mmmx
-@@ -115,14 +116,14 @@ contains(QMAKE_MAC_XARCH, no) {
+@@ -115,14 +116,14 @@ mac:contains(QMAKE_MAC_XARCH, no) {
  
              mmx3dnow_compiler.commands += $(CXXFLAGS) $(INCPATH) ${QMAKE_FILE_IN} -o ${QMAKE_FILE_OUT}
              mmx3dnow_compiler.dependency_type = TYPE_C
@@ -72,7 +72,7 @@ $NetBSD$
  
                  mac {
                      sse3dnow_compiler.commands += -Xarch_i386 -m3dnow -Xarch_i386 -msse
-@@ -133,7 +134,7 @@ contains(QMAKE_MAC_XARCH, no) {
+@@ -133,7 +134,7 @@ mac:contains(QMAKE_MAC_XARCH, no) {
  
                  sse3dnow_compiler.commands += $(CXXFLAGS) $(INCPATH) ${QMAKE_FILE_IN} -o ${QMAKE_FILE_OUT}
                  sse3dnow_compiler.dependency_type = TYPE_C
@@ -81,7 +81,7 @@ $NetBSD$
                  sse3dnow_compiler.input = SSE3DNOW_SOURCES
                  sse3dnow_compiler.variable_out = OBJECTS
                  sse3dnow_compiler.name = compiling[sse3dnow] ${QMAKE_FILE_IN}
-@@ -142,7 +143,7 @@ contains(QMAKE_MAC_XARCH, no) {
+@@ -142,7 +143,7 @@ mac:contains(QMAKE_MAC_XARCH, no) {
              }
          }
          sse {
@@ -90,7 +90,7 @@ $NetBSD$
  
              mac {
                  sse_compiler.commands += -Xarch_i386 -msse
-@@ -153,7 +154,7 @@ contains(QMAKE_MAC_XARCH, no) {
+@@ -153,7 +154,7 @@ mac:contains(QMAKE_MAC_XARCH, no) {
  
              sse_compiler.commands += $(CXXFLAGS) $(INCPATH) ${QMAKE_FILE_IN} -o ${QMAKE_FILE_OUT}
              sse_compiler.dependency_type = TYPE_C
@@ -99,7 +99,7 @@ $NetBSD$
              sse_compiler.input = SSE_SOURCES
              sse_compiler.variable_out = OBJECTS
              sse_compiler.name = compiling[sse] ${QMAKE_FILE_IN}
-@@ -161,7 +162,7 @@ contains(QMAKE_MAC_XARCH, no) {
+@@ -161,7 +162,7 @@ mac:contains(QMAKE_MAC_XARCH, no) {
              QMAKE_EXTRA_COMPILERS += sse_compiler
          }
          sse2 {
@@ -108,7 +108,7 @@ $NetBSD$
  
              mac {
                  sse2_compiler.commands += -Xarch_i386 -msse2
-@@ -172,7 +173,7 @@ contains(QMAKE_MAC_XARCH, no) {
+@@ -172,7 +173,7 @@ mac:contains(QMAKE_MAC_XARCH, no) {
  
              sse2_compiler.commands += $(CXXFLAGS) $(INCPATH) ${QMAKE_FILE_IN} -o ${QMAKE_FILE_OUT}
              sse2_compiler.dependency_type = TYPE_C
@@ -117,7 +117,7 @@ $NetBSD$
              sse2_compiler.input = SSE2_SOURCES
              sse2_compiler.variable_out = OBJECTS
              sse2_compiler.name = compiling[sse2] ${QMAKE_FILE_IN}
-@@ -180,7 +181,7 @@ contains(QMAKE_MAC_XARCH, no) {
+@@ -180,7 +181,7 @@ mac:contains(QMAKE_MAC_XARCH, no) {
              QMAKE_EXTRA_COMPILERS += sse2_compiler
          }
          ssse3 {
@@ -126,7 +126,7 @@ $NetBSD$
  
              mac {
                  ssse3_compiler.commands += -Xarch_i386 -mssse3
-@@ -191,7 +192,7 @@ contains(QMAKE_MAC_XARCH, no) {
+@@ -191,7 +192,7 @@ mac:contains(QMAKE_MAC_XARCH, no) {
  
              ssse3_compiler.commands += $(CXXFLAGS) $(INCPATH) ${QMAKE_FILE_IN} -o ${QMAKE_FILE_OUT}
              ssse3_compiler.dependency_type = TYPE_C
@@ -135,7 +135,7 @@ $NetBSD$
              ssse3_compiler.input = SSSE3_SOURCES
              ssse3_compiler.variable_out = OBJECTS
              ssse3_compiler.name = compiling[ssse3] ${QMAKE_FILE_IN}
-@@ -199,11 +200,11 @@ contains(QMAKE_MAC_XARCH, no) {
+@@ -199,11 +200,11 @@ mac:contains(QMAKE_MAC_XARCH, no) {
              QMAKE_EXTRA_COMPILERS += ssse3_compiler
          }
          iwmmxt {

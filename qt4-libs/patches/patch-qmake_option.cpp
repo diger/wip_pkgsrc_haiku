@@ -1,6 +1,6 @@
 $NetBSD$
 
---- qmake/option.cpp.orig	2012-11-23 10:11:21.022806528 +0000
+--- qmake/option.cpp.orig	2013-06-07 05:17:01.013893632 +0000
 +++ qmake/option.cpp
 @@ -263,6 +263,11 @@ Option::parseCommandLine(int argc, char 
                  Option::host_mode = HOST_WIN_MODE;
@@ -14,7 +14,7 @@ $NetBSD$
              } else if(opt == "integrity") {
                  Option::target_mode = TARG_INTEGRITY_MODE;
              } else if(opt == "d") {
-@@ -541,6 +546,9 @@ Option::init(int argc, char **argv)
+@@ -542,6 +547,9 @@ Option::init(int argc, char **argv)
  #if defined(Q_OS_MAC)
          Option::host_mode = Option::HOST_MACX_MODE;
          Option::target_mode = Option::TARG_MACX_MODE;

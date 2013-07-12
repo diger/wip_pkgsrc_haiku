@@ -1,6 +1,6 @@
 $NetBSD: patch-al,v 1.8 2011/03/03 05:50:04 adam Exp $
 
---- src/corelib/io/qsettings.cpp.orig	2012-11-23 10:09:55.056098816 +0000
+--- src/corelib/io/qsettings.cpp.orig	2013-06-07 05:16:52.016252928 +0000
 +++ src/corelib/io/qsettings.cpp
 @@ -141,9 +141,16 @@ QT_END_INCLUDE_NAMESPACE
  

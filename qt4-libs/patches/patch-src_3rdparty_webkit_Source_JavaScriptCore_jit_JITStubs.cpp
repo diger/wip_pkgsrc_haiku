@@ -2,7 +2,7 @@ $NetBSD: patch-src_3rdparty_webkit_Source_JavaScriptCore_jit_JITStubs.cpp,v 1.1 
 
 Fix building on NetBSD/amd64 with GCC.
 
---- src/3rdparty/webkit/Source/JavaScriptCore/jit/JITStubs.cpp.orig	2012-11-23 10:10:05.046399488 +0000
+--- src/3rdparty/webkit/Source/JavaScriptCore/jit/JITStubs.cpp.orig	2013-06-07 05:16:54.018874368 +0000
 +++ src/3rdparty/webkit/Source/JavaScriptCore/jit/JITStubs.cpp
 @@ -79,7 +79,7 @@ namespace JSC {
  #define THUMB_FUNC_PARAM(name)

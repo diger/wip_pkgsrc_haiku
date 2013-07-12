@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/gui/painting/qgraphicssystem.cpp.orig	2012-11-23 10:09:53.046399488 +0000
+--- src/gui/painting/qgraphicssystem.cpp.orig	2013-06-07 05:16:59.031719424 +0000
 +++ src/gui/painting/qgraphicssystem.cpp
 @@ -44,7 +44,7 @@
  #ifdef Q_WS_X11

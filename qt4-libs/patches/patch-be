@@ -2,7 +2,7 @@ $NetBSD$
 
 Build shared libjscore.
 
---- src/3rdparty/webkit/Source/JavaScriptCore/JavaScriptCore.pri.orig	2012-11-23 10:10:04.043515904 +0000
+--- src/3rdparty/webkit/Source/JavaScriptCore/JavaScriptCore.pri.orig	2013-06-07 05:16:54.014417920 +0000
 +++ src/3rdparty/webkit/Source/JavaScriptCore/JavaScriptCore.pri
 @@ -86,9 +86,7 @@ defineTest(prependJavaScriptCoreLib) {
      } else {

@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/corelib/tools/tools.pri.orig	2012-11-23 10:09:55.028573696 +0000
+--- src/corelib/tools/tools.pri.orig	2013-06-07 05:16:52.025690112 +0000
 +++ src/corelib/tools/tools.pri
-@@ -120,7 +120,7 @@ INCLUDEPATH += ../3rdparty/md5 \
+@@ -124,7 +124,7 @@ INCLUDEPATH += ../3rdparty/md5 \
                 ../3rdparty/md4
  
  # Note: libm should be present by default becaue this is C++

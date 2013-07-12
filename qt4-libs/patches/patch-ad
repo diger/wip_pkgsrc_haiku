@@ -1,6 +1,6 @@
 $NetBSD: patch-ad,v 1.12 2011/01/12 07:07:07 adam Exp $
 
---- src/corelib/global/qglobal.h.orig	2012-11-23 10:09:55.045088768 +0000
+--- src/corelib/global/qglobal.h.orig	2013-06-07 05:16:52.001048576 +0000
 +++ src/corelib/global/qglobal.h
 @@ -163,6 +163,7 @@ namespace QT_NAMESPACE {}
       NETBSD   - NetBSD
@@ -37,7 +37,7 @@ $NetBSD: patch-ad,v 1.12 2011/01/12 07:07:07 adam Exp $
  #else
  #  error "Qt has not been ported to this OS - talk to qt-bugs@trolltech.com"
  #endif
-@@ -880,6 +887,8 @@ namespace QT_NAMESPACE {}
+@@ -882,6 +889,8 @@ namespace QT_NAMESPACE {}
  #  define Q_WS_WIN16
  #  error "Qt requires Win32 and does not work with Windows 3.x"
  #elif defined(_WIN32_X11_)
@@ -46,7 +46,7 @@ $NetBSD: patch-ad,v 1.12 2011/01/12 07:07:07 adam Exp $
  #  define Q_WS_X11
  #elif defined(Q_OS_WIN32)
  #  define Q_WS_WIN32
-@@ -913,6 +922,10 @@ namespace QT_NAMESPACE {}
+@@ -915,6 +924,10 @@ namespace QT_NAMESPACE {}
  #  endif
  #endif
  

@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/network/kernel/qnetworkinterface_unix.cpp.orig	2012-11-23 10:09:55.024379392 +0000
+--- src/network/kernel/qnetworkinterface_unix.cpp.orig	2013-06-07 05:17:00.025165824 +0000
 +++ src/network/kernel/qnetworkinterface_unix.cpp
 @@ -52,6 +52,10 @@
  #include <sys/types.h>

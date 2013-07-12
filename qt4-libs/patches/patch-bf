@@ -2,7 +2,7 @@ $NetBSD$
 
 Build shared libjscore.
 
---- src/3rdparty/webkit/Source/JavaScriptCore/JavaScriptCore.pro.orig	2012-11-23 10:10:04.043778048 +0000
+--- src/3rdparty/webkit/Source/JavaScriptCore/JavaScriptCore.pro.orig	2013-06-07 05:16:54.005767168 +0000
 +++ src/3rdparty/webkit/Source/JavaScriptCore/JavaScriptCore.pro
 @@ -4,7 +4,6 @@ include($$PWD/../WebKit.pri)
  include(JavaScriptCore.pri)

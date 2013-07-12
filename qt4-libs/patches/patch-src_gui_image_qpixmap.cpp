@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/gui/image/qpixmap.cpp.orig	2012-11-23 10:09:53.055574528 +0000
+--- src/gui/image/qpixmap.cpp.orig	2013-06-07 05:16:59.020971520 +0000
 +++ src/gui/image/qpixmap.cpp
 @@ -71,6 +71,10 @@
  # include "private/qpixmap_mac_p.h"

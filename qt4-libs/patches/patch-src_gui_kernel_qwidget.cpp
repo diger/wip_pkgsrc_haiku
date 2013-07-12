@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/gui/kernel/qwidget.cpp.orig	2012-11-23 10:09:53.032505856 +0000
+--- src/gui/kernel/qwidget.cpp.orig	2013-06-07 05:16:59.010223616 +0000
 +++ src/gui/kernel/qwidget.cpp
-@@ -1514,6 +1514,20 @@ void QWidget::create(WId window, bool in
+@@ -1512,6 +1512,20 @@ void QWidget::create(WId window, bool in
      setAttribute(Qt::WA_WState_Created);                        // set created flag
      d->create_sys(window, initializeWindow, destroyOldWindow);
  
@@ -23,7 +23,7 @@ $NetBSD$
      // a real toplevel window needs a backing store
      if (isWindow() && windowType() != Qt::Desktop) {
          d->topData()->backingStore.destroy();
-@@ -12751,6 +12765,53 @@ void QWidgetPrivate::syncUnifiedMode() {
+@@ -12788,6 +12802,53 @@ void QWidgetPrivate::syncUnifiedMode() {
  
  #endif // QT_MAC_USE_COCOA
  

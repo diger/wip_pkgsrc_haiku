@@ -4,7 +4,7 @@ $NetBSD$
 * fix build with -openssl-linked for OpenSSL 0.9.8*
   http://qt.gitorious.org/qt/qt/commit/4db91cbd6147e40f543342f22c05b7baddc52e5a
 
---- src/network/ssl/qsslsocket_openssl_symbols_p.h.orig	2012-11-23 10:09:54.033292288 +0000
+--- src/network/ssl/qsslsocket_openssl_symbols_p.h.orig	2013-06-07 05:17:00.021495808 +0000
 +++ src/network/ssl/qsslsocket_openssl_symbols_p.h
 @@ -279,7 +279,7 @@ int q_SSL_CTX_check_private_key(SSL_CTX 
  #endif

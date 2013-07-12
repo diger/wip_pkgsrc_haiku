@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- config.tests/mac/dwarf2.test.orig	2013-06-07 05:16:41.021233664 +0000
++++ config.tests/mac/dwarf2.test
+@@ -52,7 +52,7 @@ if [ "$DWARF2_SUPPORT" != "yes" ]; then
+     [ "$VERBOSE" = "yes" ] && echo "DWARF2 debug symbols disabled."
+     exit 0
+ else
+-    if [ "$DWARF2_SUPPORT_BROKEN" == "yes" ]; then
++    if [ "$DWARF2_SUPPORT_BROKEN" = "yes" ]; then
+         [ "$VERBOSE" = "yes" ] && echo "DWARF2 debug symbols disabled."
+         exit 0
+     else

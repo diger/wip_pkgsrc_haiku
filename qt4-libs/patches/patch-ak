@@ -1,6 +1,6 @@
 $NetBSD: patch-ak,v 1.7 2010/11/15 13:05:45 adam Exp $
 
---- src/gui/kernel/qcursor_x11.cpp.orig	2012-11-23 10:09:53.013107200 +0000
+--- src/gui/kernel/qcursor_x11.cpp.orig	2013-06-07 05:16:59.001048576 +0000
 +++ src/gui/kernel/qcursor_x11.cpp
 @@ -249,7 +249,7 @@ void QCursorData::update()
          return;

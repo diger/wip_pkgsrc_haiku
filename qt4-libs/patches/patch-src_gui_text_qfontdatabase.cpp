@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/gui/text/qfontdatabase.cpp.orig	2012-11-23 10:09:53.030146560 +0000
+--- src/gui/text/qfontdatabase.cpp.orig	2013-06-07 05:16:59.059506688 +0000
 +++ src/gui/text/qfontdatabase.cpp
 @@ -173,7 +173,7 @@ struct  QtFontSize
      unsigned short count : 16;
@@ -63,7 +63,7 @@ $NetBSD$
  
  #if defined(Q_OS_SYMBIAN) && defined(QT_NO_FREETYPE)
  // class with virtual destructor, derived in qfontdatabase_s60.cpp
-@@ -1052,7 +1055,7 @@ static void initFontDef(const QtFontDesc
+@@ -1044,7 +1047,7 @@ static void initFontDef(const QtFontDesc
  #endif
  #endif
  
@@ -72,7 +72,7 @@ $NetBSD$
  static void getEngineData(const QFontPrivate *d, const QFontCache::Key &key)
  {
      // look for the requested font in the engine data cache
-@@ -1117,6 +1120,8 @@ QT_BEGIN_INCLUDE_NAMESPACE
+@@ -1109,6 +1112,8 @@ QT_BEGIN_INCLUDE_NAMESPACE
  #  include "qfontdatabase_qpa.cpp"
  #elif defined(Q_OS_SYMBIAN)
  #  include "qfontdatabase_s60.cpp"

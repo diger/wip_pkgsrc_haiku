@@ -1,6 +1,6 @@
 $NetBSD$
 
---- qmake/generators/unix/unixmake2.cpp.orig	2012-11-23 10:11:21.019398656 +0000
+--- qmake/generators/unix/unixmake2.cpp.orig	2013-06-07 05:17:01.017563648 +0000
 +++ qmake/generators/unix/unixmake2.cpp
 @@ -244,6 +244,8 @@ UnixMakefileGenerator::writeMakeParts(QT
          if(!project->isEmpty("QMAKE_BUNDLE")) {

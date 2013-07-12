@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/3rdparty/webkit/Source/WebCore/platform/qt/PlatformKeyboardEventQt.cpp.orig	2012-11-23 10:09:58.051642368 +0000
+--- src/3rdparty/webkit/Source/WebCore/platform/qt/PlatformKeyboardEventQt.cpp.orig	2013-06-07 05:16:56.055050240 +0000
 +++ src/3rdparty/webkit/Source/WebCore/platform/qt/PlatformKeyboardEventQt.cpp
 @@ -133,7 +133,7 @@ String keyIdentifierForQtKeyCode(int key
      case Qt::Key_Backtab:

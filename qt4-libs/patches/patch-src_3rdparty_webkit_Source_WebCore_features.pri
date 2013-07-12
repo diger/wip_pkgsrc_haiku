@@ -2,7 +2,7 @@ $NetBSD$
 
 Mac OS X: Problem linking with QTKit enabled.
 
---- src/3rdparty/webkit/Source/WebCore/features.pri.orig	2012-11-23 10:10:02.048234496 +0000
+--- src/3rdparty/webkit/Source/WebCore/features.pri.orig	2013-06-07 05:16:55.042729472 +0000
 +++ src/3rdparty/webkit/Source/WebCore/features.pri
 @@ -98,7 +98,7 @@ contains(DEFINES, ENABLE_SINGLE_THREADED
  

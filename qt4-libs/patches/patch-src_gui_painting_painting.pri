@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/gui/painting/painting.pri.orig	2012-11-23 10:09:53.039321600 +0000
+--- src/gui/painting/painting.pri.orig	2013-06-07 05:16:59.045350912 +0000
 +++ src/gui/painting/painting.pri
 @@ -173,7 +173,7 @@ unix:!mac:!symbian|qpa {
                  painting/qprinterinfo_unix.cpp

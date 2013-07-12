@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/3rdparty/clucene/src/CLucene/util/Arrays.h.orig	2012-11-23 10:10:12.048758784 +0000
+--- src/3rdparty/clucene/src/CLucene/util/Arrays.h.orig	2013-06-07 05:16:58.058458112 +0000
 +++ src/3rdparty/clucene/src/CLucene/util/Arrays.h
 @@ -151,7 +151,7 @@ CL_NS_DEF(util)
  

@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/gui/image/qpixmapdatafactory.cpp.orig	2012-11-23 10:09:53.056360960 +0000
+--- src/gui/image/qpixmapdatafactory.cpp.orig	2013-06-07 05:16:59.014942208 +0000
 +++ src/gui/image/qpixmapdatafactory.cpp
 @@ -59,6 +59,9 @@
  #ifdef Q_OS_SYMBIAN

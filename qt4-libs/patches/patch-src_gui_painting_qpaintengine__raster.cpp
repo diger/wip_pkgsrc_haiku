@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/gui/painting/qpaintengine_raster.cpp.orig	2012-11-23 10:09:53.052690944 +0000
+--- src/gui/painting/qpaintengine_raster.cpp.orig	2013-06-07 05:16:59.038535168 +0000
 +++ src/gui/painting/qpaintengine_raster.cpp
 @@ -99,6 +99,8 @@
  #  include <private/qfontengine_s60_p.h>

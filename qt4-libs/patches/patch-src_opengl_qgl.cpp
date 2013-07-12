@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/opengl/qgl.cpp.orig	2012-11-23 10:10:14.036700160 +0000
+--- src/opengl/qgl.cpp.orig	2013-06-07 05:17:00.004980736 +0000
 +++ src/opengl/qgl.cpp
 @@ -110,7 +110,7 @@
  

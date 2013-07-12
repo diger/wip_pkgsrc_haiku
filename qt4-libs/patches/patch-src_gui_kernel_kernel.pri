@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/gui/kernel/kernel.pri.orig	2012-11-23 10:09:53.005242880 +0000
+--- src/gui/kernel/kernel.pri.orig	2013-06-07 05:16:59.013107200 +0000
 +++ src/gui/kernel/kernel.pri
 @@ -334,3 +334,19 @@ wince*: {
                  ../corelib/kernel/qfunctions_wince.cpp \

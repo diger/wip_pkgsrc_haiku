@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/3rdparty/clucene/src/CLucene/search/FieldCacheImpl.cpp.orig	2012-11-23 10:10:12.040894464 +0000
+--- src/3rdparty/clucene/src/CLucene/search/FieldCacheImpl.cpp.orig	2013-06-07 05:16:58.036175872 +0000
 +++ src/3rdparty/clucene/src/CLucene/search/FieldCacheImpl.cpp
 @@ -414,7 +414,7 @@ FieldCacheImpl::FileEntry::FileEntry (co
  	  _CLDECDELETE(term);

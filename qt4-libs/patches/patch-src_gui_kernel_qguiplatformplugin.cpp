@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/gui/kernel/qguiplatformplugin.cpp.orig	2012-11-23 10:09:53.020185088 +0000
+--- src/gui/kernel/qguiplatformplugin.cpp.orig	2013-06-07 05:16:59.011534336 +0000
 +++ src/gui/kernel/qguiplatformplugin.cpp
 @@ -156,6 +156,8 @@ QString QGuiPlatformPlugin::styleName()
      return QLatin1String("Plastique");                  // default style for X11 and small devices

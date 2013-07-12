@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/gui/util/qsystemtrayicon.cpp.orig	2012-11-23 10:09:53.045875200 +0000
+--- src/gui/util/qsystemtrayicon.cpp.orig	2013-06-07 05:16:59.032768000 +0000
 +++ src/gui/util/qsystemtrayicon.cpp
 @@ -573,7 +573,19 @@ void QBalloonTip::balloon(const QPoint& 
      }

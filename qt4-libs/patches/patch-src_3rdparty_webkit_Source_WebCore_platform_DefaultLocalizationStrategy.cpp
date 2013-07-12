@@ -2,7 +2,7 @@ $NetBSD: patch-src_3rdparty_webkit_Source_WebCore_platform_DefaultLocalizationSt
 
 Fix C++ error.
 
---- src/3rdparty/webkit/Source/WebCore/platform/DefaultLocalizationStrategy.cpp.orig	2012-11-23 10:09:58.034078720 +0000
+--- src/3rdparty/webkit/Source/WebCore/platform/DefaultLocalizationStrategy.cpp.orig	2013-06-07 05:16:55.064225280 +0000
 +++ src/3rdparty/webkit/Source/WebCore/platform/DefaultLocalizationStrategy.cpp
 @@ -59,7 +59,11 @@ static String formatLocalizedString(Stri
      return result.get();

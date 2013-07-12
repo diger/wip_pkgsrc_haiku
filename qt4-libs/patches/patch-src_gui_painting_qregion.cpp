@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/gui/painting/qregion.cpp.orig	2012-11-23 10:09:53.059506688 +0000
+--- src/gui/painting/qregion.cpp.orig	2013-06-07 05:16:59.028835840 +0000
 +++ src/gui/painting/qregion.cpp
 @@ -1631,6 +1631,9 @@ QT_END_INCLUDE_NAMESPACE
  #elif defined(Q_WS_QWS) || defined(Q_WS_QPA)
