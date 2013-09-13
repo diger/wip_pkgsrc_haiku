@@ -1,25 +1,24 @@
-all: clean qsystray qsystray_gcc2
+CC=g++
+SIGNATURE="application/x-vnd.QtSystrayManager_gcc4"
 
-qsystray: 
-		setgcc gcc4
-		sleep 1
-		make -f Makefile.gcc4
+all: qsystray
 
-qsystray_gcc2: 
-		setgcc gcc2
-		sleep 1
-		make -f Makefile.gcc2
-		setgcc gcc4
-		sleep 1
-		
+qsystray: qsystray_gcc4.o
+		$(CC) -g qsystray_gcc4.o -ltracker -lroot -lbe -oqsystray
+		rc qsystray_gcc4.rdef
+		xres -o ./qsystray qsystray_gcc4.rsrc
+		mimeset -f ./qsystray
+
+qsystray_gcc4.o:
+		$(CC) -g -oqsystray_gcc4.o -DGCC4BUILD=1 -DAPP_SIGNATURE="\"$(SIGNATURE)\"" -c qsystray.cpp
+
 clean:
-		make -f Makefile.gcc4 clean
-		make -f Makefile.gcc2 clean
+		rm -f ./qsystray_gcc4.o
+		rm -f ./qsystray_gcc4.rsrc
+		rm -f ./qsystray
 
 install:
-		make -f Makefile.gcc4 install
-		make -f Makefile.gcc2 install
-
-		make -f Makefile.gcc4 clean
-		make -f Makefile.gcc2 clean
-
+		cp -f ./qsystray /boot/common/bin/qsystray
+		rm -f ./qsystray_gcc4.o
+		rm -f ./qsystray_gcc4.rsrc
+		rm -f ./qsystray
