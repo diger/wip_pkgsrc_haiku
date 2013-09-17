@@ -30,6 +30,8 @@ CONFIGURE_ARGS+=	--with-zlib-lib=${BUILDLINK_PREFIX.zlib}/lib
 CONFIGURE_ARGS+=	--with-qca-lib=${BUILDLINK_PREFIX.qca2}/lib
 CONFIGURE_ARGS+=	--with-qca-inc=${BUILDLINK_PREFIX.qca2}/include
 
+LDFLAGS+= -liconv
+
 #
 # a group of scripts that aren't to be installed, and aren't
 # used by the pkgsrc system.  But they all have the non-standard
@@ -60,6 +62,8 @@ INSTALL_MAKE_FLAGS=	INSTALL_ROOT=${DESTDIR}
 .endfor
 
 post-install:
+	rc -o ${WRKDIR}/Psi.rsrc ${FILESDIR}/Psi.rdef
+	xres -o ${DESTDIR}${PREFIX}/bin/psi ${WRKDIR}/Psi.rsrc
 	# remove some files that shouldn't be there,
 	# install some files where they should be installed
 	${INSTALL_DATA} ${WRKSRC}/README ${DESTDIR}${PREFIX}/share/doc/psi
