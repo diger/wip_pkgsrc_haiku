@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/defines.pri.orig	2013-05-10 10:10:45.016515072 +0000
+--- src/defines.pri.orig	2013-09-01 11:17:48.000524288 +0000
 +++ src/defines.pri
-@@ -74,6 +74,28 @@ equals(d_use_webgl, "true") { DEFINES *=
+@@ -74,6 +74,29 @@ equals(d_use_webgl, "true") { DEFINES *=
  win32-msvc* {
      equals(d_w7api, "true") { DEFINES *= W7API }
  }
@@ -11,6 +11,7 @@ $NetBSD$
 +    DEFINES *= NO_X11
 +    DEFINES *= DISABLE_DBUS
 +    DEFINES *= QUPZILLA_DEBUG_BUILD
++    DEFINES *= USE_QTWEBKIT_2_2
 +    d_prefix = $$(QUPZILLA_PREFIX)
 +    binary_folder = "$$d_prefix"bin
 +    library_folder = "$$d_prefix"lib
@@ -31,7 +32,7 @@ $NetBSD$
  equals(d_kde, "true") { DEFINES *= KDE }
  equals(d_nox11, "true") { DEFINES *= NO_X11 }
  equals(d_portable, "true") { DEFINES *= PORTABLE_BUILD }
-@@ -81,7 +103,7 @@ equals(d_nonblock_dialogs, "true") { DEF
+@@ -81,7 +104,7 @@ equals(d_nonblock_dialogs, "true") { DEF
  equals(d_use_qtwebkit_2_2, "true") { DEFINES *= USE_QTWEBKIT_2_2 }
  equals(d_disable_dbus, "true") { DEFINES *= DISABLE_DBUS }
  

@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/plugins.pri.orig	2013-05-10 10:10:45.020709376 +0000
+--- src/plugins.pri.orig	2013-09-01 11:17:48.004456448 +0000
 +++ src/plugins.pri
 @@ -40,8 +40,8 @@ MOC_DIR = build
  RCC_DIR = build

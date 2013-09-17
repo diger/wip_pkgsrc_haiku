@@ -1,10 +1,12 @@
 $NetBSD$
 
-SHA1 (QupZilla-1.4.3.tar.gz) = 38ac935dc7e4ad5a68cd9ca55abd116abfd66c50
-RMD160 (QupZilla-1.4.3.tar.gz) = b9f7d27f96177c9033bd83aa1bfa343c9f4deee5
-Size (QupZilla-1.4.3.tar.gz) = 3947912 bytes
-SHA1 (patch-src_defines.pri) = c3c86afdea38c16dda1785c46c0670c282f51687
-SHA1 (patch-src_lib_app_mainapplication.cpp) = 8ee855bbfe94e7dfca1fefc0433dac6cbfa2158c
-SHA1 (patch-src_lib_plugins_plugins.cpp) = a2ce7d7728154a2409b4633e0da841ef9642ca29
-SHA1 (patch-src_main_main.pro) = 17785a8b232cdeac7985b2a9c1b752848fb83b58
-SHA1 (patch-src_plugins.pri) = e7f3e8a676be49d26bc731e72d6cf884f6f375ec
+SHA1 (QupZilla-1.4.4.tar.gz) = 381300cb8b4bbed1f750dd15c9e01b24f845c604
+RMD160 (QupZilla-1.4.4.tar.gz) = 86e2936eba2f948d5b2263c51d118072c60141e9
+Size (QupZilla-1.4.4.tar.gz) = 3949537 bytes
+SHA1 (patch-src_defines.pri) = e75a6838a99eb762d37929a6f54fbdfb0f7ff966
+SHA1 (patch-src_lib_app_mainapplication.cpp) = 708feddea538262bf7385fe520d6c0c3ada1155b
+SHA1 (patch-src_lib_plugins_plugins.cpp) = b54ea1a45f230408d92571ca764de7798197faeb
+SHA1 (patch-src_lib_tools_html5permissions_html5permissionsmanager.cpp) = 900a8511d02bdb27ace8f64d8f822bb9ef21cbda
+SHA1 (patch-src_lib_tools_html5permissions_html5permissionsmanager.h) = 800c48466d9fbe8347d87878824cd8f5a85b8a90
+SHA1 (patch-src_main_main.pro) = 58fe35f91770ab11c372a098936496b7107bd6a8
+SHA1 (patch-src_plugins.pri) = b06b6aec9d2e5fe49553a3cac2ffc054e65d4660

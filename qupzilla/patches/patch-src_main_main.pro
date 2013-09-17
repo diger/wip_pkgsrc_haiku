@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/main/main.pro.orig	2013-05-10 10:10:45.020971520 +0000
+--- src/main/main.pro.orig	2013-09-01 11:17:48.004718592 +0000
 +++ src/main/main.pro
 @@ -9,8 +9,8 @@ mac: TARGET = QupZilla
  

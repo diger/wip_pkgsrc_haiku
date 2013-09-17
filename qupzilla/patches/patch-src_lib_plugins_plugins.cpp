@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/lib/plugins/plugins.cpp.orig	2013-05-10 10:10:45.000000000 +0000
+--- src/lib/plugins/plugins.cpp.orig	2013-09-01 11:17:48.025690112 +0000
 +++ src/lib/plugins/plugins.cpp
 @@ -165,7 +165,7 @@ void Plugins::loadAvailablePlugins()
  

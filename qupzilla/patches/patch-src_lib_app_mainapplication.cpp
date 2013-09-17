@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/lib/app/mainapplication.cpp.orig	2013-07-12 06:45:01.785907712 +0000
+--- src/lib/app/mainapplication.cpp.orig	2013-09-01 11:17:48.061341696 +0000
 +++ src/lib/app/mainapplication.cpp
 @@ -118,7 +118,7 @@ MainApplication::MainApplication(int &ar
      , m_macDockMenu(0)
