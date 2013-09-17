@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/applicationinfo.cpp.orig	2012-10-04 00:53:03.000000000 +0000
+--- src/applicationinfo.cpp.orig	2012-10-04 00:53:03.007602176 +0000
 +++ src/applicationinfo.cpp
 @@ -51,7 +51,7 @@
  #define PROG_APPCAST_URL ""
@@ -25,7 +25,7 @@ $NetBSD$
  			QDir cacheDir(QDir::homePath() + "/Library/Caches/" + name());
  			QDir dataDir(configDir);
 +#elif defined Q_WS_HAIKU
-+			QDir configDir(QDir::homePath() + "/.psi");
++			QDir configDir(QDir::homePath() + "/.config/psi");
 +			QDir cacheDir(configDir);
 +			QDir dataDir(configDir);
  #elif defined Q_WS_X11
