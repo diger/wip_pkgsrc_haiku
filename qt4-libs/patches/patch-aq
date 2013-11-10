@@ -1,44 +1,57 @@
 $NetBSD$
 
---- configure.orig	2013-06-07 05:16:41.062914560 +0000
+--- configure.orig	2013-11-08 10:16:50.043778048 +0000
 +++ configure
-@@ -3223,13 +3223,13 @@ if [ -z "${CFG_HOST_ARCH}" ]; then
-             CFG_HOST_ARCH=x86_64
-         fi
+@@ -128,7 +128,7 @@ getQMakeConf1()
          ;;
--    *:*:ppc)
-+    *:*:ppc|*:*:powerpc)
-         if [ "$OPT_VERBOSE" = "yes" ]; then
-             echo "    32-bit PowerPC (powerpc)"
-         fi
-         CFG_HOST_ARCH=powerpc
+     esac; done < "$1"
+ }
+-
++echo $AWK
+ getQMakeConf2()
+ {
+     $AWK '
+@@ -274,6 +274,10 @@ else
+     PLATFORM_MAC=no
+ fi
+ 
++PLATFORM_HAIKU=no
++if [ $UNAME_SYSTEM = "Haiku" ]; then
++PLATFORM_HAIKU=yes
++fi
+ #-----------------------------------------------------------------------------
+ # Qt version detection
+ #-----------------------------------------------------------------------------
+@@ -2995,6 +2999,9 @@ if [ -z "$PLATFORM" ]; then
+      QNX:*)
+         PLATFORM=unsupported/qnx-g++
          ;;
--    *:*:ppc64)
-+    *:*:ppc64|*:*:powerpc64)
-         if [ "$OPT_VERBOSE" = "yes" ]; then
-             echo "    64-bit PowerPC (powerpc)"
-         fi
-@@ -3253,6 +3253,19 @@ if [ -z "${CFG_HOST_ARCH}" ]; then
-         fi
-         CFG_HOST_ARCH=sparc
-         ;;
-+    NetBSD:*:sparc)
-+        if [ "$OPT_VERBOSE" = "yes" ]; then
-+            echo "    NetBSD on SPARC"
-+        fi
-+        CFG_HOST_ARCH=sparc
++     Haiku:*)
++        PLATFORM=haiku-g++
 +        ;;
-+    NetBSD:*:sparc64)
-+        if [ "$OPT_VERBOSE" = "yes" ]; then
-+            echo "    NetBSD on SPARC64"
-+        fi
-+        CFG_HOST_ARCH=sparc
-+        CFG_HOST_BITSIZE=64
-+        ;;
-     QNX:*:*)
-         case "$UNAME_MACHINE" in
-         x86pc)
-@@ -4569,6 +4582,8 @@ elif [ "$PLATFORM_MAC" = "yes" ]; then
+      *)
+         if [ "$OPT_HELP" != "yes" ]; then
+             echo
+@@ -3263,6 +3270,9 @@ if [ -z "${CFG_HOST_ARCH}" ]; then
+             ;;
+         esac
+         ;;
++    Haiku:*:*)
++         CFG_HOST_ARCH=i386
++         ;;
+     *:*:*)
+         if [ "$OPT_VERBOSE" = "yes" ]; then
+             echo "    Trying '$UNAME_MACHINE'..."
+@@ -3405,7 +3415,7 @@ QMAKE_CONF_COMPILER=`getXQMakeConf QMAKE
+ TEST_COMPILER="$CXX"
+ 
+ [ -z "$TEST_COMPILER" ] && TEST_COMPILER=$QMAKE_CONF_COMPILER
+-if [ "$XPLATFORM_SYMBIAN_SBSV2" = "no" ]; then
++if [ "$XPLATFORM_SYMBIAN_SBSV2" = "no" ] && [ "$PLATFORM_HAIKU" = "no" ]; then
+     #for Symbian we don't need this checking
+     if [ -z "$TEST_COMPILER" ]; then
+         echo "ERROR: Cannot set the compiler for the configuration tests"
+@@ -4569,6 +4579,8 @@ elif [ "$PLATFORM_MAC" = "yes" ]; then
      Platform="Qt for Mac OS X"
  elif [ "$XPLATFORM_MINGW" = "yes" ]; then
      Platform="Qt for Windows"
@@ -47,7 +60,7 @@ $NetBSD$
  elif [ -n "`getXQMakeConf grep QMAKE_LIBS_X11`" ]; then
      PLATFORM_X11=yes
      Platform="Qt for Linux/X11"
-@@ -5058,7 +5073,7 @@ if true; then ###[ '!' -f "$outpath/bin/
+@@ -5058,7 +5070,7 @@ if true; then ###[ '!' -f "$outpath/bin/
      done
  
      QMAKE_BUILD_ERROR=no
@@ -56,7 +69,7 @@ $NetBSD$
      [ '!' -z "$QCONFIG_H" ] && mv -f "$QCONFIG_H" "$QMAKE_QCONFIG_H" #move qmake's qconfig.h to qconfig.h.qmake
      [ '!' -z "$OLD_QCONFIG_H" ] && mv -f "${OLD_QCONFIG_H}.old" "$OLD_QCONFIG_H" #put back qconfig.h
      [ "$QMAKE_BUILD_ERROR" = "yes" ] && exit 2
-@@ -5832,7 +5847,7 @@ if [ "$PLATFORM_MAC" = "yes" -a ! -z "$Q
+@@ -5832,7 +5844,7 @@ if [ "$PLATFORM_MAC" = "yes" -a ! -z "$Q
      QT_NAMESPACE_MAC_CRC=`"$mactests/crc.test" "$XQMAKESPEC" "$QMAKE_CONFIG" $OPT_VERBOSE "$relpath" "$outpath" config.tests/mac/crc $QT_NAMESPACE $L_FLAGS $I_FLAGS $l_FLAGS $MAC_CONFIG_TEST_COMMANDLINE`
  fi
  
@@ -65,38 +78,3 @@ $NetBSD$
  if [ "$PLATFORM_X11" = "yes" -o "$PLATFORM_QWS" = "yes" -o "$PLATFORM_QPA" = "yes" ]; then
  
      # auto-detect Glib support
-@@ -5986,7 +6001,7 @@ if [ "$PLATFORM_X11" = "yes" -o "$PLATFO
-             fi
-         fi
-     fi
--fi # X11/QWS/Lighthouse
-+fi # X11/QWS/Lighthouse/Haiku
- 
- # X11
- if [ "$PLATFORM_X11" = "yes" -a "$CFG_GUI" != "no" ]; then
-@@ -7158,7 +7173,7 @@ fi
- # select Carbon on 10.4 Tiger.
- if [ "$PLATFORM_MAC" = "yes" ]; then
-     VERSION=`uname -r | tr '.' ' ' | awk '{print $1}'`
--    if [ "$VERSION" == 8 ]; then
-+    if [ "$VERSION" = 8 ]; then
-         CFG_MAC_COCOA="no";
-         CFG_MAC_CARBON="yes";
-     fi
-@@ -8422,7 +8437,7 @@ QMakeVar set sql-plugins "$SQL_PLUGINS"
- [ "$CFG_EXCEPTIONS" = "no" ] && QCONFIG_FLAGS="$QCONFIG_FLAGS QT_NO_EXCEPTIONS"
- [ "$CFG_IPV6" = "no" ]       && QCONFIG_FLAGS="$QCONFIG_FLAGS QT_NO_IPV6"
- [ "$CFG_SXE" = "no" ]        && QCONFIG_FLAGS="$QCONFIG_FLAGS QT_NO_SXE"
--[ "$CFG_DBUS" = "no" ]      && QCONFIG_FLAGS="$QCONFIG_FLAGS QT_NO_DBUS"
-+#[ "$CFG_DBUS" = "no" ]      && QCONFIG_FLAGS="$QCONFIG_FLAGS QT_NO_DBUS"
- 
- if [ "$PLATFORM_QWS" != "yes" -a "$PLATFORM_QPA" != "yes" ]; then
-     [ "$CFG_GRAPHICS_SYSTEM" = "raster" ] && QCONFIG_FLAGS="$QCONFIG_FLAGS QT_GRAPHICSSYSTEM_RASTER"
-@@ -8638,6 +8653,7 @@ cat >>"$QTCONFIG.tmp" <<EOF
- #configuration
- CONFIG += $QTCONFIG_CONFIG
- QT_ARCH = $CFG_ARCH
-+QT_HOST_BITSIZE = $CFG_HOST_BITSIZE
- QT_EDITION = $Edition
- QT_CONFIG += $QT_CONFIG
- 

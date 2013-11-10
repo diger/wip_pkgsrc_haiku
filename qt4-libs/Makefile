@@ -11,7 +11,6 @@ INSTALL_DIRS+=		src
 BUILD_TARGET=		sub-src
 
 PTHREAD_OPTS+=		require
-UNLIMIT_RESOURCES=	datasize
 BUILDLINK_PASSTHRU_DIRS+=${QTPREFIX}
 
 PLIST_SRC=		${WRKDIR}/PLIST ${PKGDIR}/PLIST
@@ -35,7 +34,9 @@ CONFIGURE_ARGS+=	-openssl-linked
 .include "../../mk/compiler.mk"
 .if !empty(PKGSRC_COMPILER:Mclang)
 CXXFLAGS+=	-std=c++11 -Wno-c++11-narrowing
+.if empty(MACHINE_PLATFORM:MDarwin-*-*)
 CXXFLAGS+=	-D_GLIBCXX_USE_C99_FP_MACROS_DYNAMIC=1
+.endif
 .endif
 
 INSTALLATION_DIRS=	lib/pkgconfig
@@ -68,8 +69,8 @@ SUBST_FILES.no-libtool=		translations/Makefile
 SUBST_SED.no-libtool=		-e '/@: IGNORE THIS LINE/s,=.*$$,= @:,'
 
 do-install:
-.for prog in moc rcc uic
-	${INSTALL_PROGRAM} ${WRKSRC}/bin/${prog} ${DESTDIR}${QTPREFIX}/bin/
+.for f in moc rcc uic
+	${INSTALL_PROGRAM} ${WRKSRC}/bin/${f} ${DESTDIR}${QTPREFIX}/bin/
 .endfor
 	${LIBTOOL} --mode=install ${INSTALL_PROGRAM} ${WRKSRC}/bin/uic3 \
 		${DESTDIR}${QTPREFIX}/bin/
