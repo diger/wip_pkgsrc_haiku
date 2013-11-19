@@ -1,6 +1,6 @@
 $NetBSD$
 
---- man/Makefile.in.orig	2005-08-20 23:26:06.033554432 +0000
+--- man/Makefile.in.orig	2004-07-15 08:36:03.000000000 -0700
 +++ man/Makefile.in
 @@ -19,7 +19,7 @@ MAYBE8 = makewhatis
  INSTALL = @INSTALL@ -c -m 644

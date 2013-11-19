@@ -1,6 +1,6 @@
 $NetBSD$
 
---- man2html/Makefile.in.orig	2006-04-25 06:44:15.024641536 +0000
+--- man2html/Makefile.in.orig	2006-04-25 06:44:15.000000000 +0000
 +++ man2html/Makefile.in
 @@ -1,8 +1,8 @@
  CC = @CC@

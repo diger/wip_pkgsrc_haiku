@@ -1,6 +1,6 @@
 $NetBSD$
 
---- gencat/genlib.c.orig	2006-08-02 18:11:44.044040192 +0000
+--- gencat/genlib.c.orig	2006-08-02 18:11:44.000000000 +0000
 +++ gencat/genlib.c
 @@ -54,7 +54,7 @@ up-to-date.  Many thanks.
  #include <unistd.h>
