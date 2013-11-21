@@ -1,5 +1,4 @@
 @comment $NetBSD: PLIST,v 1.17 2011/01/12 14:40:42 adam Exp $
-${PLIST.Haiku}bin/qsystray
 lib/pkgconfig/Qt3Support.pc
 lib/pkgconfig/QtCore.pc
 lib/pkgconfig/QtDeclarative.pc

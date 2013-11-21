@@ -94,10 +94,6 @@ do-install:
 		${MAKE_PROGRAM} install_flat_headers install_targ_headers install_class_headers
 .endfor
 	cd ${DESTDIR}${PREFIX} && find qt4/include -type f -print > ${WRKDIR}/PLIST
-.if ${OPSYS} == "Haiku"
-	cd ${WRKSRC}/src/3rdparty/haiku-tools/qsystray && env ${MAKE_ENV} ${INSTALL_ENV} \
-		${MAKE_PROGRAM} qsystray
-.endif		
 .for f in Qt3Support QtCore QtDeclarative QtGui QtMultimedia QtNetwork QtScript QtScriptTools QtSql QtSvg QtTest QtWebKit QtXml QtXmlPatterns jscore webcore
 	${LIBTOOL} --mode=install ${INSTALL_LIB} ${WRKSRC}/lib/lib${f}.la \
 		${DESTDIR}${QTPREFIX}/lib/
@@ -149,10 +145,6 @@ do-install:
 	${LIBTOOL} --mode=install ${INSTALL_LIB} \
 		${WRKSRC}/plugins/inputmethods/libqimsw-multi.la \
 		${DESTDIR}/${QTPREFIX}/plugins/inputmethods/
-.endif
-.if ${OPSYS} == "Haiku"
-	${MKDIR} -p ${DESTDIR}${PREFIX}/bin
-	cp ${WRKSRC}/src/3rdparty/haiku-tools/qsystray/qsystray ${DESTDIR}${PREFIX}/bin/
 .endif
 
 .if ${OPSYS} != "Darwin" &&  ${OPSYS} != "Haiku"
