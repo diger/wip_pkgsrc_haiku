@@ -62,6 +62,7 @@ INSTALL_MAKE_FLAGS=	INSTALL_ROOT=${DESTDIR}
 .endfor
 
 post-install:
+	strip -s ${DESTDIR}${PREFIX}/bin/psi
 	rc -o ${WRKDIR}/Psi.rsrc ${FILESDIR}/Psi.rdef
 	xres -o ${DESTDIR}${PREFIX}/bin/psi ${WRKDIR}/Psi.rsrc
 	# remove some files that shouldn't be there,
