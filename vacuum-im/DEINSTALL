@@ -1,0 +1,21 @@
+#!@SH@
+#
+# $Haiku: DEINSTALL,v 0.1 2013/07/12 10:45:29 agc Exp $
+case ${STAGE} in
+DEINSTALL)
+	name=`${PKG_INFO} -L ${PKGNAME} |  awk '/bin\/vacuum/ {print} '`
+#	linkdir=`finddir B_USER_DESKBAR_DIRECTORY`/Internet
+	deskdir=`finddir B_DESKTOP_DIRECTORY`
+#    if [ -f $linkdir/Psi ]; then
+#		if [ "$(alert --warning "Remove link from Deskbar Menu?" Yes No)" == Yes ]; then
+#			${RM} -f $linkdir/Psi
+#		fi
+#	fi
+	if [ -f $deskdir/Psi ]; then
+		if [ "$(alert --warning "Remove link from Desktop?" Yes No)" == Yes ]; then
+			${RM} -f $deskdir/Vacuum
+		fi
+	fi
+	 notify --group pkgsrc --icon $name "${PKGNAME} is deinstalled"
+   ;;
+esac

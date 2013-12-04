@@ -1,10 +1,10 @@
 @comment $NetBSD$
 bin/qbittorrent
-share/man/man${OS_VERSION}/qbittorrent.${OS_VERSION}
+share/man/man$1/qbittorrent.1
 share/${PKGNAME}/applications/qBittorrent.desktop
-share/${PKGNAME}/icons/hicolor/${OS_VERSION}28x${OS_VERSION}28/apps/qbittorrent.png
-share/${PKGNAME}/icons/hicolor/${OS_VERSION}6x${OS_VERSION}6/apps/qbittorrent.png
-share/${PKGNAME}/icons/hicolor/${OS_VERSION}92x${OS_VERSION}92/apps/qbittorrent.png
+share/${PKGNAME}/icons/hicolor/128x128/apps/qbittorrent.png
+share/${PKGNAME}/icons/hicolor/16x16/apps/qbittorrent.png
+share/${PKGNAME}/icons/hicolor/192x192/apps/qbittorrent.png
 share/${PKGNAME}/icons/hicolor/22x22/apps/qbittorrent.png
 share/${PKGNAME}/icons/hicolor/24x24/apps/qbittorrent.png
 share/${PKGNAME}/icons/hicolor/32x32/apps/qbittorrent.png

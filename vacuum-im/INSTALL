@@ -1,0 +1,20 @@
+#!@SH@
+#
+# $Haiku: post-install,v 0.1 2013/07/12 10:45:29 agc Exp $
+case ${STAGE} in POST-INSTALL)
+	echo "===> Create link dialog"
+	name=`${PKG_INFO} -L ${PKGNAME} | awk '/bin\/vacuum/ {print} '`
+	mimeset $name;
+#	linkdir=`finddir B_USER_DESKBAR_DIRECTORY`/Internet
+	deskdir=`finddir B_DESKTOP_DIRECTORY`
+#	if [ "$(alert --warning "Create link to Deskbar Menu?" Yes No)" == Yes ]; then
+#		mkdir -p $linkdir
+#		ln -fs $name	$linkdir/Psi
+#	fi
+	if [ "$(alert --warning "Create link to Desktop?" Yes No)" == Yes ]; then
+		ln -fs $name	$deskdir/Vacuum
+	fi
+	notify --group pkgsrc --icon $name --onClickFile $name \
+	"${PKGNAME} is installed"
+;;
+esac

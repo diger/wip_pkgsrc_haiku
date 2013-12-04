@@ -1,8 +1,9 @@
 $NetBSD$
 
-SHA1 (vacuum-1.2.2.tar.gz) = eab3b48f462880296c48b1a8e5b2c6e80da9b0b4
-RMD160 (vacuum-1.2.2.tar.gz) = 2a7626212657b6391afb4bad85ee8e3208c1fe3f
-Size (vacuum-1.2.2.tar.gz) = 2267741 bytes
-SHA1 (patch-config.cmake) = 1e20c4446458514e600d80d6331e55cfe40d8b73
-SHA1 (patch-install.cmake) = 1d05233645a3218a790ced03af834a339ba0490a
+SHA1 (vacuum-1.2.3.tar.gz) = 4d67c536f1ea03f823bce085759d0eeecdde8d10
+RMD160 (vacuum-1.2.3.tar.gz) = ad57bbe6e1477233e7a069cb83d92ebef25538b1
+Size (vacuum-1.2.3.tar.gz) = 2272923 bytes
+SHA1 (patch-config.cmake) = a4ddd6bfc985f9fe13906988b6317072d7a7f2c4
+SHA1 (patch-install.cmake) = 689518a68937fd63495a15abe50a8e67585cb345
+SHA1 (patch-src_plugins_clientinfo_clientinfo.cpp) = 89274ef1a6c5cb12b230fa6c1650d81461a9c2f4
 SHA1 (patch-src_thirdparty_minizip_ioapi.h) = 7a107f3950f7f03baea49cabe7cc911e1f8b2be2
