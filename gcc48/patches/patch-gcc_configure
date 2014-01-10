@@ -1,0 +1,85 @@
+$NetBSD$
+
+--- gcc/configure.orig	2013-06-19 01:18:38.042467328 +0000
++++ gcc/configure
+@@ -599,6 +599,7 @@ ac_includes_default="\
+ #endif"
+ 
+ ac_subst_vars='LTLIBOBJS
++math_library
+ LIBOBJS
+ enable_plugin
+ pluginlibs
+@@ -8810,6 +8811,15 @@ ac_compiler_gnu=$ac_cv_c_compiler_gnu
+ # UNSORTED
+ # --------
+ 
++# Configure -lm usage for host tools that need it
++math_library="-lm"
++case $host in
++  *-*-haiku*)
++    # no separate math library needed
++    math_library=
++    ;;
++esac
++
+ 
+ # These libraries may be used by collect2.
+ # We may need a special search path to get them linked.
+@@ -11106,7 +11116,7 @@ case ${enable_threads} in
+     # default
+     target_thread_file='single'
+     ;;
+-  aix | dce | lynx | mipssde | posix | rtems | \
++  aix | dce | haiku | lynx | mipssde | posix | rtems | \
+   single | tpf | vxworks | win32)
+     target_thread_file=${enable_threads}
+     ;;
+@@ -14899,7 +14909,7 @@ $as_echo_n "checking for $compiler optio
+       esac
+       ;;
+ 
+-    beos* | irix5* | irix6* | nonstopux* | osf3* | osf4* | osf5*)
++    beos* | haiku* | irix5* | irix6* | nonstopux* | osf3* | osf4* | osf5*)
+       # PIC is the default for these OSes.
+       ;;
+ 
+@@ -15589,8 +15599,8 @@ _LT_EOF
+       ;;
+ 
+     haiku*)
+-      archive_cmds='$CC -shared $libobjs $deplibs $compiler_flags ${wl}-soname $wl$soname -o $lib'
+-      link_all_deplibs=yes
++      allow_undefined_flag=unsupported
++      archive_cmds='$CC -nostart $libobjs $deplibs $compiler_flags ${wl}-soname $wl$soname -o $lib'
+       ;;
+ 
+     interix[3-9]*)
+@@ -17024,16 +17034,9 @@ gnu*)
+   ;;
+ 
+ haiku*)
+-  version_type=linux
+-  need_lib_prefix=no
+-  need_version=no
+-  dynamic_linker="$host_os runtime_loader"
+-  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}${major} ${libname}${shared_ext}'
+-  soname_spec='${libname}${release}${shared_ext}$major'
++  library_names_spec='${libname}${shared_ext}'
++  dynamic_linker="$host_os ld.so"
+   shlibpath_var=LIBRARY_PATH
+-  shlibpath_overrides_runpath=yes
+-  sys_lib_dlsearch_path_spec='/boot/home/config/lib /boot/common/lib /boot/beos/system/lib'
+-  hardcode_into_libs=yes
+   ;;
+ 
+ hpux9* | hpux10* | hpux11*)
+@@ -20692,7 +20695,7 @@ haiku*)
+   soname_spec='${libname}${release}${shared_ext}$major'
+   shlibpath_var=LIBRARY_PATH
+   shlibpath_overrides_runpath=yes
+-  sys_lib_dlsearch_path_spec='/boot/home/config/lib /boot/common/lib /boot/beos/system/lib'
++  sys_lib_dlsearch_path_spec='/boot/home/config/lib /boot/system/lib'
+   hardcode_into_libs=yes
+   ;;
+ 

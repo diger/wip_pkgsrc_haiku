@@ -1,0 +1,15 @@
+#!@SH@
+#
+# $Haiku: DEINSTALL,v 0.1 2013/07/12 10:45:29 agc Exp $
+case ${STAGE} in
+DEINSTALL)
+	name=`${PKG_INFO} -L ${PKGNAME} |  awk '/bin\/kdiff3/ {print} '`
+	deskdir=`finddir B_DESKTOP_DIRECTORY`
+	if [ -f $deskdir/KDiff3 ]; then
+		if [ "$(alert --warning "Remove link from Desktop?" Yes No)" == Yes ]; then
+			${RM} -f $deskdir/Psi
+		fi
+	fi
+	 notify --group pkgsrc --icon $name "${PKGNAME} is deinstalled"
+   ;;
+esac

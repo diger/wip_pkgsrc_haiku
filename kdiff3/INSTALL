@@ -1,0 +1,15 @@
+#!@SH@
+#
+# $Haiku: post-install,v 0.1 2013/07/12 10:45:29 agc Exp $
+case ${STAGE} in POST-INSTALL)
+	echo "===> Create link dialog"
+	name=`${PKG_INFO} -L ${PKGNAME} | awk '/bin\/kdiff3/ {print} '`
+	mimeset $name;
+	deskdir=`finddir B_DESKTOP_DIRECTORY`
+	if [ "$(alert --warning "Create link to Desktop?" Yes No)" == Yes ]; then
+		ln -fs $name	$deskdir/KDiff3
+	fi
+	notify --group pkgsrc --icon $name --onClickFile $name \
+	"${PKGNAME} is installed"
+;;
+esac

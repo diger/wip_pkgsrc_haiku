@@ -1,0 +1,12 @@
+@comment $NetBSD$
+include/WebDownload.h
+include/WebFrame.h
+include/WebKitInfo.h
+include/WebPage.h
+include/WebSettings.h
+include/WebView.h
+include/WebViewConstants.h
+include/WebWindow.h
+lib/libWebKit.so
+lib/libWebKit.so.1
+lib/libWebKit.so.1.2.0
