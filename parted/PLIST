@@ -1,0 +1,21 @@
+@comment $NetBSD$
+include/parted/constraint.h
+include/parted/debug.h
+include/parted/device.h
+include/parted/disk.h
+include/parted/exception.h
+include/parted/filesys.h
+include/parted/geom.h
+include/parted/natmath.h
+include/parted/parted.h
+include/parted/timer.h
+include/parted/unit.h
+lib/charset.alias
+lib/libparted-fs-resize.la
+lib/libparted.la
+lib/pkgconfig/libparted.pc
+man/man8/parted.8
+man/man8/partprobe.8
+sbin/parted
+sbin/partprobe
+share/info/parted.info

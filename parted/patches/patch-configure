@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- configure.orig	2014-06-27 05:48:29.000000000 +0000
++++ configure
+@@ -4034,7 +4034,8 @@ case "$host_os" in
+ 	linux*) OS=linux ;;
+ 	gnu*)	OS=gnu ;;
+ 	beos*)	OS=beos ;;
+-	*)	as_fn_error $? "Unknown or unsupported OS \"$host_os\".  Only \"linux\", \"gnu\" and \"beos\" are supported in this version of GNU Parted." "$LINENO" 5 ;;
++	haiku*)	OS=haiku ;;
++	*)	as_fn_error $? "Unknown or unsupported OS \"$host_os\".  Only \"linux\", \"gnu\", \"haiku\" and \"beos\" are supported in this version of GNU Parted." "$LINENO" 5 ;;
+ esac
+ 
+ 

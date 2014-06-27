@@ -1,0 +1,34 @@
+$NetBSD$
+
+--- libparted/Makefile.in.orig	2014-06-27 05:48:32.000000000 +0000
++++ libparted/Makefile.in
+@@ -1134,6 +1134,7 @@ libparted_la_SOURCES = debug.c			\
+ EXTRA_libparted_la_SOURCES = arch/linux.c	\
+ 				arch/linux.h	\
+ 				arch/gnu.c	\
++				arch/haiku.c	\
+ 				arch/beos.c
+ 
+ libparted_la_LIBADD = \
+@@ -1228,6 +1229,7 @@ distclean-compile:
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/$(OS).Plo@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/architecture.Plo@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/beos.Plo@am__quote@
++@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/haiku.Plo@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/constraint.Plo@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/debug.Plo@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/device.Plo@am__quote@
+@@ -1312,6 +1314,13 @@ beos.lo: arch/beos.c
+ @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+ @am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -c -o beos.lo `test -f 'arch/beos.c' || echo '$(srcdir)/'`arch/beos.c
+ 
++haiku.lo: arch/haiku.c
++@am__fastdepCC_TRUE@	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -MT haiku.lo -MD -MP -MF $(DEPDIR)/haiku.Tpo -c -o haiku.lo `test -f 'arch/haiku.c' || echo '$(srcdir)/'`arch/haiku.c
++@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/haiku.Tpo $(DEPDIR)/haiku.Plo
++@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='arch/haiku.c' object='haiku.lo' libtool=yes @AMDEPBACKSLASH@
++@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
++@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS) -c -o haiku.lo `test -f 'arch/haiku.c' || echo '$(srcdir)/'`arch/haiku.c
++
+ mostlyclean-libtool:
+ 	-rm -f *.lo
+ 
