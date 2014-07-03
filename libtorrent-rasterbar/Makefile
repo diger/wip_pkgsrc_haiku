@@ -10,4 +10,4 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 PKGCONFIG_OVERRIDE=	libtorrent-rasterbar.pc.in
 
-.include "../../wip/libtorrent-rasterbar/Makefile.common"
+.include "../../wip-haiku/libtorrent-rasterbar/Makefile.common"
