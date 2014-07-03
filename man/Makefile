@@ -22,15 +22,17 @@ USE_TOOLS+=		groff:run
 PKGMANDIR?=		man
 USE_PKGLOCALEDIR=	yes
 HAS_CONFIGURE=		yes
-CONFIGURE_ARGS+=	-confdir ${PKG_SYSCONFDIR} +sgid +traditional
+CONFIGURE_ARGS+=	-confdir ${PKG_SYSCONFDIR} +traditional
 CONFIGURE_ARGS+=	-prefix=${PREFIX:Q}
 CONFIGURE_ARGS+=	-mandir=${PREFIX}/${PKGMANDIR}
 CONFIGURE_ENV+=		deflocale=${PREFIX}/${PKGLOCALEDIR}/locale/
+CONFIGURE_ENV+=		man_group=`whoami`
+CONFIGURE_ENV+=		man_user=`groups`
 
 LDFLAGS.Haiku+=		-lbe
-MAN_GROUP?=		man
-BUILD_DEFS+=		MAN_GROUP
-PKG_GROUPS=		${MAN_GROUP}
+#MAN_GROUP?=		man
+#BUILD_DEFS+=		MAN_GROUP
+#PKG_GROUPS=		${MAN_GROUP}
 
 EXAMPLESDIR=		${PREFIX}/share/examples/man/
 CONF_FILES=		${EXAMPLESDIR}/man.conf ${PKG_SYSCONFDIR}/man.conf
